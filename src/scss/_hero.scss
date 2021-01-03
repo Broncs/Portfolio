@@ -1,0 +1,32 @@
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/pexel-photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.hero {
+  position: relative;
+  min-height: 100vh;
+  margin-top: -5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-info h1 {
+    color: $clr-white-1;
+    max-width: 300px;
+    // margin-top: -130px;
+  }
+
+  .hero-info p {
+    line-height: 1.8;
+    color: $clr-white-1;
+  }
+}

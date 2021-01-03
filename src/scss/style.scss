@@ -1,6 +1,9 @@
 @import "variables";
 @import "nav";
 @import "btn";
+@import "hero";
+@import "about";
+
 *,
 ::after,
 ::before {
@@ -15,13 +18,14 @@ body {
   background: $clr-white-1;
   color: $clr-grey-2;
   line-height: 1.5;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 ul {
   list-style-type: none;
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 h1,
 h2,

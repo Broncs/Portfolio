@@ -1,0 +1,26 @@
+.img-laptop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 60px;
+}
+
+.about-info {
+  h2 {
+    max-width: 400px;
+    font-weight: 500;
+    margin-bottom: 1.3rem;
+  }
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+  color: $clr-grey-5;
+  span {
+    color: $clr-blue-2;
+    margin-right: 8px;
+  }
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+}

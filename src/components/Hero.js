@@ -2,15 +2,15 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section>
-      <div>
-        <article>
-          <h1>Payments infrastructure for the internet</h1>
+    <section className="hero">
+      <div className="container">
+        <article className="hero-info">
+          <h1>Jhonatan Mendes</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
             atque!
           </p>
-          <button className="btn">Curriculo</button>
+          <button className="btn btn-primary">Curriculo</button>
         </article>
       </div>
     </section>

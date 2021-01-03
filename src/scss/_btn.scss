@@ -11,3 +11,10 @@
     background: $clr-blue-1;
   }
 }
+
+.btn-primary {
+  padding: 0.7rem 1rem;
+  border-radius: $--radius;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
