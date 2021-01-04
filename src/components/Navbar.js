@@ -6,22 +6,24 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="container">
-        <div className="nav-header">
-          <FaLaptopCode className="nav-logo" />
+        <div className="nav-container">
+          <div className="nav-header">
+            <FaLaptopCode className="nav-logo" />
 
-          <button className="btn toggle-btn">
-            <FaBars />
-          </button>
+            <button className="btn toggle-btn">
+              <FaBars />
+            </button>
+          </div>
+
+          <ul className="nav-links">
+            <li>Inicio</li>
+            <li>Sobre</li>
+            <li>Projetos</li>
+            <li>Skills</li>
+            <li>Ferramentas</li>
+            <li>Contato</li>
+          </ul>
         </div>
-
-        <ul className="nav-links">
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Skills</li>
-          <li>Tools</li>
-          <li>contact</li>
-        </ul>
       </div>
     </nav>
   );

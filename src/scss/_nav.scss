@@ -21,3 +21,23 @@
 .nav-links {
   display: none;
 }
+
+@media screen and (min-width: 800px) {
+  .toggle-btn {
+    display: none !important;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    color: $clr-white-1;
+
+    li {
+      margin: 0 10px;
+    }
+  }
+}
