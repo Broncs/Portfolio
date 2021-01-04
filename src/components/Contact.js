@@ -1,48 +1,66 @@
 import React from "react";
-import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
-import { GoLocation } from "react-icons/go";
+
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 const Contact = () => {
   return (
-    <section>
-      <div>
+    <section className="contact-section">
+      <div className="container">
         <div>
-          <form>
-            <h2>Leave a message!</h2>
-            <input type="text" placeholder="Seu nome:" />
-            <input type="text" placeholder="Email:" />
-            <input type="text" placeholder="assunto:" />
+          <form className="contact-form">
+            <h2>Deixe uma Mensagem!</h2>
+            <input
+              className="text-input"
+              type="text"
+              placeholder="Seu nome :"
+            />
+            <input className="text-input" type="text" placeholder="Email :" />
+            <input className="text-input" type="text" placeholder="assunto :" />
             <textarea
-              placeholder="sua menssagem"
-              name=""
-              id=""
+              className="textarea-input"
+              placeholder="Sua Mensagem :"
+              name="mensagem"
+              id="mensagem"
               cols="30"
               rows="10"
             ></textarea>
+            <button className="btn btn-primary">enviar mensagem</button>
           </form>
         </div>
 
-        <div>
-          <h2>Contact info</h2>
+        <div className="contact-info">
+          <h2>Informações de contato</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Exercitationem, ut?
           </p>
           <div>
-            <ul>
+            <ul className="list-icons">
               <li>
-                <GoLocation />
-                <h5>Location</h5>
-                <span>los angeles </span>
+                <div className="contact-icon">
+                  <FaMapMarkerAlt className="fas" />
+                </div>
+                <div className="contact-text">
+                  <h5>Localização</h5>
+                  <span>Guarulhos / São Paulo</span>
+                </div>
               </li>
               <li>
-                <AiOutlinePhone />
-                <h5>call me at</h5>
-                <span>los angeles </span>
+                <div className="contact-icon">
+                  <FaPhoneAlt className="fas" />
+                </div>
+                <div className="contact-text">
+                  <h5>Telefone</h5>
+                  <span>(11) 984797795 </span>
+                </div>
               </li>
               <li>
-                <AiOutlineMail />
-                <h5>Email me at</h5>
-                <span>los angeles </span>
+                <div className="contact-icon">
+                  <FaEnvelope className="fas" />
+                </div>
+                <div className="contact-text">
+                  <h5>Email</h5>
+                  <span>Jhowfrombrazil@gmail.com</span>
+                </div>
               </li>
             </ul>
           </div>

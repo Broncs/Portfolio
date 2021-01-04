@@ -1,5 +1,4 @@
 import React from "react";
-import { SiJavascript } from "react-icons/si";
 
 const Skills = () => {
   return (

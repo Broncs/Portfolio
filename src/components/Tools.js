@@ -1,5 +1,4 @@
 import React from "react";
-import { DiVisualstudio } from "react-icons/di";
 
 const Tools = () => {
   return (
