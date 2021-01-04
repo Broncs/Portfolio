@@ -11,16 +11,44 @@
     font-weight: 500;
     margin-bottom: 1.3rem;
   }
+  p {
+    line-height: 27px;
+  }
 }
 
 .contact-list li {
   margin-bottom: 8px;
   color: $clr-grey-5;
+  word-wrap: break-word;
   span {
     color: $clr-blue-2;
     margin-right: 8px;
   }
   &:last-of-type {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .img-laptop img {
+    height: 400px;
+  }
+  .about-info {
+    h2 {
+      font-size: 1.8rem;
+      line-height: 1.5;
+      letter-spacing: 0.5px;
+    }
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .about-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 80px 0;
+  }
+  .img-laptop {
+    padding: 0;
   }
 }

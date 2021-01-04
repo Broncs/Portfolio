@@ -27,3 +27,16 @@
     }
   }
 }
+
+@media screen and (min-width: 501px) {
+  .skills-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .skills-img-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

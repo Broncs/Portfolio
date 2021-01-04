@@ -37,7 +37,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <p>Copyright - 2020 Johnny Ung, All Right Reserved</p>
+        <p className="copryright">
+          Copyright - 2021 Jhonatan mendes,todos direitos reservados
+        </p>
       </div>
     </footer>
   );

@@ -80,3 +80,14 @@
 .fadeIn-top {
   top: 20%;
 }
+@media screen and (min-width: 700px) {
+  .img-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .img-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

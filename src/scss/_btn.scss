@@ -6,6 +6,8 @@
   color: white;
   background: $clr-black-1;
   cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
 
   &:hover {
     background: $clr-blue-1;

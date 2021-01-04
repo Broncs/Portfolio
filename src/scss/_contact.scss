@@ -26,9 +26,11 @@
 }
 
 // contact info
-
+.form-contact {
+  padding: 0 0 100px;
+}
 .contact-info {
-  padding: 100px 0 100px;
+  padding: 100px 0 0;
 
   h2 {
     font-size: 2.2rem;
@@ -64,5 +66,30 @@
   span {
     color: $clr-grey-5;
     font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .input-width-1,
+  .input-width-2 {
+    max-width: 48%;
+  }
+  .input-width-2 {
+    float: right;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .form-contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 100px;
+  }
+  .contact-form {
+    padding: 0 30px;
+  }
+  .contact-info {
+    padding: 0;
   }
 }
