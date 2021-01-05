@@ -1,14 +1,11 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
 
-const Modal = ({ setToggle }) => {
+const Modal = ({ modalWillClose }) => {
   return (
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span
-          class="close"
-          onClick={() => setToggle((prevValue) => !prevValue)}
-        >
+    <div id="myModal" className="modal">
+      <div className="modal-content">
+        <span className="close" onClick={modalWillClose}>
           <AiOutlineClose />
         </span>
         <ul>
