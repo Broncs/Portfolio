@@ -3,7 +3,7 @@ import React from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 const Contact = () => {
   return (
-    <section className="contact-section">
+    <section id="contato" className="contact-section">
       <div className="container">
         <div className="form-contact">
           <form className="contact-form">

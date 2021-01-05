@@ -13,22 +13,22 @@ const Modal = ({ setToggle }) => {
         </span>
         <ul>
           <li>
-            <a href="#">Inicio</a>
+            <a href="/#">Inicio</a>
           </li>
           <li>
-            <a href="#">Sobre</a>
+            <a href="/#sobre">Sobre</a>
           </li>
           <li>
-            <a href="#">Projetos</a>
+            <a href="/#projetos">Projetos</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a href="/#skills">Skills</a>
           </li>
           <li>
-            <a href="#">Ferramentas</a>
+            <a href="/#ferramentas">Ferramentas</a>
           </li>
           <li>
-            <a href="#">Contato</a>
+            <a href="#contato">Contato</a>
           </li>
         </ul>
       </div>

@@ -5,7 +5,7 @@ import project3 from "../images/stripe.PNG";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projetos">
       <div className="container">
         <div className="project-info">
           <h2>Projetos</h2>

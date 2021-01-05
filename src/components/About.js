@@ -3,7 +3,7 @@ import peopleilustrator from "../images/people-with-laptop.png";
 
 const About = () => {
   return (
-    <section>
+    <section id="sobre">
       <div className="container">
         <div className="about-container">
           <div className="img-laptop">
