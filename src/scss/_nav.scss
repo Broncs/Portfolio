@@ -45,6 +45,9 @@
 .nav-links {
   display: none;
 }
+.custom-link {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 900px) {
   .toggle-btn {

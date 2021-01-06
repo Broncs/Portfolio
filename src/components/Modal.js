@@ -1,5 +1,6 @@
 import React from "react";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-scroll";
 
 const Modal = ({ modalWillClose }) => {
   return (
@@ -10,22 +11,76 @@ const Modal = ({ modalWillClose }) => {
         </span>
         <ul>
           <li>
-            <a href="/#">Inicio</a>
+            <Link
+              className="custom-link"
+              activeClass="active"
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Inicio
+            </Link>
           </li>
           <li>
-            <a href="/#sobre">Sobre</a>
+            <Link
+              className="custom-link"
+              activeClass="active"
+              to="sobre"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Sobre
+            </Link>
           </li>
           <li>
-            <a href="/#projetos">Projetos</a>
+            <Link
+              className="custom-link"
+              activeClass="active"
+              to="projetos"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Projetos
+            </Link>
           </li>
           <li>
-            <a href="/#skills">Skills</a>
+            <Link
+              className="custom-link"
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Skills
+            </Link>
           </li>
           <li>
-            <a href="/#ferramentas">Ferramentas</a>
+            <Link
+              className="custom-link"
+              activeClass="active"
+              to="ferramentas"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Ferramentas
+            </Link>
           </li>
           <li>
-            <a href="#contato">Contato</a>
+            <Link
+              className="custom-link"
+              activeClass="active"
+              to="contato"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              Contato
+            </Link>
           </li>
         </ul>
       </div>
