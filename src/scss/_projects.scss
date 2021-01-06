@@ -58,9 +58,9 @@
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+  color: #fff;
 
   h3 {
-    color: #fff;
     font-weight: 500;
     letter-spacing: 0.15em;
     margin-bottom: 0.5em;
@@ -69,6 +69,16 @@
   p {
     color: #fff;
     font-size: 0.8em;
+  }
+  ul {
+    display: flex !important;
+    justify-content: space-evenly;
+
+    li {
+      @extend .btn;
+      background-color: $clr-white-1;
+      color: $clr-black-1;
+    }
   }
 }
 .content:hover .content-details {

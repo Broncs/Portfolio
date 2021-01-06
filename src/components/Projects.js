@@ -1,7 +1,7 @@
 import React from "react";
-import project1 from "../images/cocktail.PNG";
-import project2 from "../images/color.PNG";
-import project3 from "../images/stripe.PNG";
+
+import SingleProject from "./SingleProject";
+import projects from "../data";
 
 const Projects = () => {
   return (
@@ -16,32 +16,10 @@ const Projects = () => {
         </div>
 
         <div className="img-container">
-          <div className="content">
-            <div className="content-overlay"></div>
-            <img src={project1} alt="cocktail" />
-            <div className="content-details fadeIn-top">
-              <h3>This is a title</h3>
-              <p>This is a short description</p>
-            </div>
-          </div>
-
-          <div className="content">
-            <div className="content-overlay"></div>
-            <img src={project2} alt="cocktail" />
-            <div className="content-details fadeIn-top">
-              <h3>This is a title</h3>
-              <p>This is a short description</p>
-            </div>
-          </div>
-
-          <div className="content">
-            <div className="content-overlay"></div>
-            <img src={project3} alt="cocktail" />
-            <div className="content-details fadeIn-top">
-              <h3>This is a title</h3>
-              <p>This is a short description</p>
-            </div>
-          </div>
+          {projects.map((item) => {
+            const { id } = item;
+            return <SingleProject key={id} {...item} />;
+          })}
         </div>
       </div>
     </section>
