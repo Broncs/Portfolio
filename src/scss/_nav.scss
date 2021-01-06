@@ -1,5 +1,5 @@
 .navbar {
-  height: 5rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +7,30 @@
   position: fixed;
   width: 100%;
   z-index: 1;
+  transition: all 0.3s ease-in;
 }
+
+.nav-background {
+  background: $clr-white-1;
+
+  .nav-logo {
+    color: $clr-black-1;
+  }
+  .toggle-btn {
+    color: $clr-black-1;
+    border: 2px solid $clr-black-1;
+  }
+}
+.toggle-btn {
+  color: $clr-white-1;
+  background: transparent;
+  border: 2px solid $clr-white-1;
+  padding: 8px 10px;
+  border-radius: 2px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .nav-logo {
   font-size: 2rem;
   color: $clr-white-1;
@@ -25,7 +48,7 @@
 
 @media screen and (min-width: 900px) {
   .toggle-btn {
-    display: none !important;
+    display: none;
   }
   .nav-container {
     display: flex;
