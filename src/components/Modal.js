@@ -12,6 +12,7 @@ const Modal = ({ modalWillClose }) => {
         <ul className="modal-link-container">
           <li>
             <Link
+              onClick={modalWillClose}
               className="custom-link"
               activeClass="active"
               to="home"
@@ -24,6 +25,7 @@ const Modal = ({ modalWillClose }) => {
           </li>
           <li>
             <Link
+              onClick={modalWillClose}
               className="custom-link"
               activeClass="active"
               to="sobre"
@@ -36,6 +38,7 @@ const Modal = ({ modalWillClose }) => {
           </li>
           <li>
             <Link
+              onClick={modalWillClose}
               className="custom-link"
               activeClass="active"
               to="projetos"
@@ -48,6 +51,7 @@ const Modal = ({ modalWillClose }) => {
           </li>
           <li>
             <Link
+              onClick={modalWillClose}
               className="custom-link"
               activeClass="active"
               to="skills"
@@ -60,6 +64,7 @@ const Modal = ({ modalWillClose }) => {
           </li>
           <li>
             <Link
+              onClick={modalWillClose}
               className="custom-link"
               activeClass="active"
               to="ferramentas"
@@ -72,6 +77,7 @@ const Modal = ({ modalWillClose }) => {
           </li>
           <li>
             <Link
+              onClick={modalWillClose}
               className="custom-link"
               activeClass="active"
               to="contato"

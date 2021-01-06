@@ -25,8 +25,16 @@
     // margin-top: -130px;
   }
 
-  .hero-info p {
+  .hero-info {
     line-height: 1.8;
     color: $clr-white-1;
+  }
+
+  .typewriter-text {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 600;
   }
 }

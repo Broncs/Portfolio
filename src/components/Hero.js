@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
@@ -6,10 +7,30 @@ const Hero = () => {
       <div className="container">
         <article className="hero-info">
           <h1>Jhonatan Mendes</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-            atque!
-          </p>
+
+          <div className="typewriter-text">
+            <Typewriter
+              options={{
+                autoStart: true,
+                loop: true,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .changeDelay(20)
+                  .typeString("Desenvolvedor Front-end.")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Estudando <strong>ADS</strong>.")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Apaixonado por novas tecnologias.")
+                  .pauseFor(1000)
+
+                  .start();
+              }}
+            />
+          </div>
+
           <button className="btn btn-primary">Curriculo</button>
         </article>
       </div>
