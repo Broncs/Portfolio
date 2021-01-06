@@ -1,17 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
+import ScrollToTop from "./ScrollToTop";
 import { Link } from "react-scroll";
 
 import { FaLaptopCode } from "react-icons/fa";
 import { FaBars } from "react-icons/fa";
 import Modal from "./Modal";
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const container = useRef(null);
-
-  // const handleClick = () => {
-  //   setToggle((prevValue) => !prevValue);
-  // };
 
   const handleScroll = (e) => {
     if (window.scrollY === 0) {
@@ -138,6 +136,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      {isScrolled && <ScrollToTop modalWillClose={modalWillClose} />}
     </nav>
   );
 };

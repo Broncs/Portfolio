@@ -8,6 +8,7 @@ import Tools from "./components/Tools";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import About from "./components/About";
+
 import "./scss/style.scss";
 
 function App() {
