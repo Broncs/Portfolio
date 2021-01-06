@@ -79,17 +79,30 @@
   }
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 960px) {
   .form-contact {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 100px;
   }
+
   .contact-form {
-    padding: 0 30px;
+    padding: 0 45px 0 0;
+    max-width: 60%;
   }
   .contact-info {
     padding: 0;
+  }
+
+  .input-width-1,
+  .input-width-2 {
+    max-width: 48%;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .contact-info h2 {
+    margin-bottom: 38px;
   }
 }

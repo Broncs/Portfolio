@@ -24,6 +24,11 @@
       font-size: 1.2rem;
     }
   }
+
+  &:first-child svg path {
+    color: blue;
+    background-color: blue;
+  }
 }
 
 @media screen and (min-width: 501px) {
