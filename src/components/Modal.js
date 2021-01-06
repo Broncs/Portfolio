@@ -9,7 +9,7 @@ const Modal = ({ modalWillClose }) => {
         <span className="close" onClick={modalWillClose}>
           <AiOutlineClose />
         </span>
-        <ul>
+        <ul className="modal-link-container">
           <li>
             <Link
               className="custom-link"

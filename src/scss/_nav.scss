@@ -49,6 +49,39 @@
   cursor: pointer;
 }
 
+// modal
+.modal-link-container {
+  .custom-link {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    transition: all ease 0.5s;
+    letter-spacing: 3px;
+    left: -15px;
+
+    &:hover:before {
+      content: "→";
+      transition: all ease 0.5s;
+      left: 0px;
+      opacity: 1;
+    }
+  }
+  .custom-link:before {
+    content: "→";
+    transition: all ease 0.2s;
+    position: relative;
+    left: -5px;
+    opacity: 0;
+  }
+  .active {
+    font-weight: 600;
+    &:before {
+      content: "→";
+      opacity: 1;
+    }
+  }
+}
+
 @media screen and (min-width: 900px) {
   .toggle-btn {
     display: none;
@@ -69,6 +102,7 @@
 
     li {
       margin: 0 10px;
+      position: relative;
     }
   }
 }
