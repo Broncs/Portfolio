@@ -16,7 +16,7 @@ const Contact = () => {
             />
             <input
               className="text-input input-width-2"
-              type="text"
+              type="email"
               placeholder="Email :"
             />
 
@@ -35,8 +35,9 @@ const Contact = () => {
           <div className="contact-info">
             <h2>Informações de contato</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Exercitationem, ut?
+              Sinta-se à vontade para entrar em contato comigo para obter
+              informações sobre perspectivas de carreira, serviços comerciais e
+              outras consultas profissionais!
             </p>
             <div>
               <ul className="list-icons">
@@ -64,7 +65,11 @@ const Contact = () => {
                   </div>
                   <div className="contact-text">
                     <h5>Email</h5>
-                    <span>Jhowfrombrazil@gmail.com</span>
+                    <span>
+                      <a href="mailto:Jhowfrombrazil@gmail.com">
+                        Jhowfrombrazil@gmail.com
+                      </a>
+                    </span>
                   </div>
                 </li>
               </ul>

@@ -37,9 +37,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <p className="copryright">
-          Copyright - 2021 Jhonatan mendes,todos direitos reservados
-        </p>
+        <p className="copryright">Copyright&copy; ,Todos direitos reservados</p>
       </div>
     </footer>
   );

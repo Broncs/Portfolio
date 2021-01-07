@@ -11,37 +11,57 @@ const About = () => {
           </div>
           <div className="about-info">
             <h2>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum,
-              omnis.
+              Olá ! Me chamo Jhonatan mendes, Sou desenvolvedor Front End , moro
+              em Guarulhos,SP.
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              maxime animi quidem fuga doloremque aperiam eum facilis culpa
-              incidunt voluptatibus eligendi odio nulla expedita optio
-              distinctio ea, id perferendis qui? Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Laborum pariatur nostrum facere
-              suscipit? Voluptatibus molestias aliquid numquam rerum animi unde?
+              Apos me formar no ensino médio, estava muito indeciso em qual
+              carreira seguir, então decidi aprender inglês, que seria bem útil
+              em qualquer área que escolhesse, apos alguns tutorias sobre logica
+              de programação, acabei me apaixonando por isso. No começo de 2020,
+              Inicie minha graduação em analise e desenvolvimento de sistemas, e
+              assim como o inglês, que eu aprendi por conta própria, estou
+              fazendo o mesmo com programação, tenho estudado todos os dias, com
+              cursos, tutorias, documentação online etc. ... Atualmente estou
+              Aprendendo desenvolvimento web Front-end , utilizando, HTML, CSS
+              ,JS, React . Busco uma oportunidade de estagio em alguma empresa,
+              Para poder aplicar meus conhecimentos em um cenário real .
+            </p>
+            <p>
+              Sinta-se à vontade para se conectar comigo! Vamos falar sobre
+              desenvolvimento web, tecnologia, esportes, videogames, culinária
+              ou como posso ajudar sua equipe ou empresa! Adoraria conhecer mais
+              desenvolvedores e expandir meu network.
             </p>
 
             <ul className="contact-list">
               <li>
                 <span>Email:</span>
-                Jhowfrombrazil@gmail.com
+                <a href="mailto:Jhowfrombrazil@gmail.com">
+                  Jhowfrombrazil@gmail.com
+                </a>
               </li>
               <li>
                 <span>Celular:</span>
-                (11) 99999999
+                (11) 98479-7795
               </li>
               <li>
                 <span> LinkedIn:</span>
-                <a href="https://www.linkedin.com/in/jhonatan-mendes-b275561a4/">
+                <a
+                  href="https://www.linkedin.com/in/jhonatan-mendes-b275561a4/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   https://www.linkedin.com/in/jhonatan-mendes-b275561a4/
                 </a>
               </li>
               <li>
                 <span>GitHub:</span>
-                <a href="https://github.com/Broncs">
-                  {" "}
+                <a
+                  href="https://github.com/Broncs"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   https://github.com/Broncs
                 </a>
               </li>

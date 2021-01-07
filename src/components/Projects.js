@@ -10,8 +10,8 @@ const Projects = () => {
         <div className="project-info">
           <h2>Projetos</h2>
           <p>
-            From ideation to creation, here are some applications that I have
-            developed
+            Aqui estão alguns Projetos que desenvolvi, E muito mais acessando
+            meu github.
           </p>
         </div>
 

@@ -5,11 +5,8 @@ const Tools = () => {
     <section id="ferramentas">
       <div className="container">
         <div className="tools-info">
-          <h2>Feramentas</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique,
-            at.
-          </p>
+          <h2>Ferramentas</h2>
+          <p>Minhas Ferramentas para ajudar a enfrentar qualquer projeto.</p>
         </div>
 
         <div>

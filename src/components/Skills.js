@@ -5,10 +5,9 @@ const Skills = () => {
     <section id="skills" className="skills">
       <div className="container">
         <div className="skills-info">
-          <h2>Skills</h2>
+          <h2>Habilidades</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique,
-            at.
+            Linguagens e tecnologias que aprendi e apliquei aos meus projetos
           </p>
         </div>
         <div>
