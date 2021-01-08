@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaTimesCircle } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
@@ -16,7 +16,6 @@ const Contact = () => {
           <form
             name="contact"
             method="POST"
-            data-netlify="true"
             className="contact-form"
             onSubmit={handleSubmit(onSubmit)}
           >
