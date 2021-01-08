@@ -31,11 +31,12 @@ const Contact = () => {
       <div className="container">
         <div className="form-contact">
           <form
+            name="contact"
             method="POST"
             className="contact-form"
             onSubmit={handleSubmit(onSubmit)}
           >
-            {/* <input type="hidden" name="form-name" value="contact" /> */}
+            <input type="hidden" name="form-name" value="contact" />
 
             <h2>Deixe uma Mensagem!</h2>
             <input
