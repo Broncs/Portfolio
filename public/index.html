@@ -29,10 +29,14 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- A little help for the Netlify post-processing bots -->
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
+      <input type="text" name="nome" />
+
       <input type="email" name="email" />
-      <textarea name="message"></textarea>
+      <input type="text" name="assunto" />
+
+      <textarea name="mensagem"></textarea>
     </form>
     <div id="root"></div>
     <!--
