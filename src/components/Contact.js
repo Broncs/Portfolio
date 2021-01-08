@@ -14,10 +14,13 @@ const Contact = () => {
   };
 
   const onSubmit = (data) => {
+    const { nome, email, assunto, mensagem } = data;
+    console.log(data);
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...data }),
+      body: encode({ "form-name": "contact", nome, email, assunto, mensagem }),
     })
       .then(() => alert("Success!"))
       .catch((error) => alert(error));
@@ -33,7 +36,7 @@ const Contact = () => {
             className="contact-form"
             onSubmit={handleSubmit(onSubmit)}
           >
-            {/* <input type="hidden" name="form-name" value="contact" /> */}
+            <input type="hidden" name="form-name" value="contact" />
 
             <h2>Deixe uma Mensagem!</h2>
             <input
