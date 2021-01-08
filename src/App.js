@@ -15,6 +15,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Success from "./components/Success";
+import NoMatch from "./components/NoMatch";
 
 import "./scss/style.scss";
 
@@ -22,7 +23,6 @@ function App() {
   const [formSubmit, setFormSubmit] = useState(false);
   return (
     <Router>
-      {console.log(formSubmit)}
       <Switch>
         <Route exact path="/">
           <Navbar />
@@ -41,6 +41,9 @@ function App() {
         </Route>
         <Route path="/success">
           <Success setFormSubmit={setFormSubmit} />
+        </Route>
+        <Route path="*">
+          <NoMatch />
         </Route>
       </Switch>
     </Router>
