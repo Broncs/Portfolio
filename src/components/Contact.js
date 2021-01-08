@@ -1,9 +1,9 @@
 import React from "react";
-import Success from "./Success";
+
 import { FaTimesCircle } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
-const Contact = () => {
+const Contact = ({ setFormSubmit }) => {
   const { register, handleSubmit, errors } = useForm();
 
   const encode = (data) => {
@@ -14,14 +14,18 @@ const Contact = () => {
       .join("&");
   };
 
-  const onSubmit = (data) => {
+  const onSubmit = (data, e) => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...data }),
     })
-      .then(() => <Success />)
+      .then(() => {
+        setFormSubmit(true);
+      })
       .catch((error) => alert(error));
+
+    e.target.reset();
   };
 
   return (
@@ -68,7 +72,6 @@ const Contact = () => {
               rows="10"
               ref={register({ required: true })}
             ></textarea>
-
             {errors.nome && errors.nome.type === "required" && (
               <p className="error-msg">
                 <span>
@@ -109,12 +112,10 @@ const Contact = () => {
                 Mensagem obrigatória
               </p>
             )}
-
             <button type="submit" className="btn btn-primary">
               enviar mensagem
             </button>
           </form>
-
           <div className="contact-info">
             <h2>Informações de contato</h2>
             <p>
