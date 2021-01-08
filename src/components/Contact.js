@@ -1,9 +1,10 @@
 import React from "react";
+import Success from "./Success";
 import { FaTimesCircle } from "react-icons/fa";
 import { useForm } from "react-hook-form";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 const Contact = () => {
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit, errors } = useForm();
 
   const encode = (data) => {
     return Object.keys(data)
@@ -19,7 +20,7 @@ const Contact = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...data }),
     })
-      .then(() => alert("Success!"))
+      .then(() => <Success />)
       .catch((error) => alert(error));
   };
 
@@ -32,8 +33,6 @@ const Contact = () => {
             className="contact-form"
             onSubmit={handleSubmit(onSubmit)}
           >
-            {/* <input type="hidden" name="form-name" value="contact" /> */}
-
             <h2>Deixe uma Mensagem!</h2>
             <input
               className={`text-input input-width-1 ${
