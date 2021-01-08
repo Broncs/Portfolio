@@ -1,0 +1,22 @@
+.error-border {
+  border-color: $clr-red-1;
+}
+
+.success-border {
+  border-color: green;
+}
+.error-msg {
+  margin: 5px 0;
+  padding: 4px 10px;
+  border-radius: 3px 3px;
+  font-size: 15px;
+  color: $clr-red-1;
+  background-color: $clr-red-2;
+
+  span {
+    margin-right: 4px;
+  }
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+}

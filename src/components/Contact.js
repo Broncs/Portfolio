@@ -1,35 +1,105 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { FaTimesCircle } from "react-icons/fa";
+import { useForm } from "react-hook-form";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 const Contact = () => {
+  const { register, handleSubmit, watch, errors } = useForm();
+
+  const onSubmit = (formData) => {
+    console.log(formData);
+  };
+
   return (
     <section id="contato" className="contact-section">
       <div className="container">
         <div className="form-contact">
-          <form className="contact-form">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            className="contact-form"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <h2>Deixe uma Mensagem!</h2>
-
             <input
-              className="text-input input-width-1"
+              className={`text-input input-width-1 ${
+                errors.nome && "error-border"
+              }`}
               type="text"
               placeholder="Seu nome :"
+              name="nome"
+              ref={register({ required: true, minLength: 3 })}
             />
             <input
-              className="text-input input-width-2"
+              className={`text-input input-width-2 ${
+                errors.email && "error-border"
+              }`}
               type="email"
               placeholder="Email :"
+              name="email"
+              ref={register({ required: true })}
             />
-
-            <input className="text-input" type="text" placeholder="assunto :" />
+            <input
+              className={`text-input ${errors.assunto && "error-border"}`}
+              type="text"
+              placeholder="assunto :"
+              name="assunto"
+              ref={register({ required: true })}
+            />
             <textarea
-              className="textarea-input"
+              className={`textarea-input ${errors.mensagem && "error-border"}`}
               placeholder="Sua Mensagem :"
               name="mensagem"
               id="mensagem"
               cols="30"
               rows="10"
+              ref={register({ required: true })}
             ></textarea>
-            <button className="btn btn-primary">enviar mensagem</button>
+
+            {errors.nome && errors.nome.type === "required" && (
+              <p className="error-msg">
+                <span>
+                  <FaTimesCircle />
+                </span>
+                Preencha um nome
+              </p>
+            )}
+            {errors.nome && errors.nome.type === "minLength" && (
+              <p className="error-msg">
+                <span>
+                  <FaTimesCircle />
+                </span>
+                Nome minimo 3 characteres
+              </p>
+            )}
+            {errors.email && errors.email.type === "required" && (
+              <p className="error-msg">
+                <span>
+                  <FaTimesCircle />
+                </span>
+                Preencha um email
+              </p>
+            )}
+            {errors.assunto && errors.assunto.type === "required" && (
+              <p className="error-msg">
+                <span>
+                  <FaTimesCircle />
+                </span>
+                Assunto obrigatório
+              </p>
+            )}
+            {errors.mensagem && (
+              <p className="error-msg">
+                <span>
+                  <FaTimesCircle />
+                </span>
+                Mensagem obrigatória
+              </p>
+            )}
+
+            <button type="submit" className="btn btn-primary">
+              enviar mensagem
+            </button>
           </form>
 
           <div className="contact-info">

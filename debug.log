@@ -1,3 +1,6 @@
 [0103/174650.816:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
 [0104/073309.545:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
 [0106/143621.612:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[0107/071302.574:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[0107/112912.812:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0
+[0107/114031.645:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\jhowg\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\1276570a-f0a4-407e-b08f-f71d376f3dd9: O sistema não pode encontrar o caminho especificado. (0x3)
