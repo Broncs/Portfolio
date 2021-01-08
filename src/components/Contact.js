@@ -5,8 +5,22 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 const Contact = () => {
   const { register, handleSubmit, watch, errors } = useForm();
 
-  const onSubmit = (formData) => {
-    console.log(formData);
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const onSubmit = (data) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...data }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
   };
 
   return (
@@ -19,7 +33,7 @@ const Contact = () => {
             className="contact-form"
             onSubmit={handleSubmit(onSubmit)}
           >
-            <input type="hidden" name="form-name" value="contact" />
+            {/* <input type="hidden" name="form-name" value="contact" /> */}
 
             <h2>Deixe uma Mensagem!</h2>
             <input
