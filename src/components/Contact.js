@@ -27,7 +27,11 @@ const Contact = () => {
     <section id="contato" className="contact-section">
       <div className="container">
         <div className="form-contact">
-          <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
+          <form
+            name="contact"
+            className="contact-form"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             {/* <input type="hidden" name="form-name" value="contact" /> */}
 
             <h2>Deixe uma Mensagem!</h2>
