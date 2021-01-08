@@ -20,6 +20,8 @@ const Contact = () => {
             className="contact-form"
             onSubmit={handleSubmit(onSubmit)}
           >
+            <input type="hidden" name="form-name" value="contact" />
+
             <h2>Deixe uma Mensagem!</h2>
             <input
               className={`text-input input-width-1 ${
