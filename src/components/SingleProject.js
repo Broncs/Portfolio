@@ -1,6 +1,6 @@
 import React from "react";
 
-const SingleProject = ({ title, description, img }) => {
+const SingleProject = ({ title, description, img, liveDemo, github }) => {
   return (
     <>
       <div className="content">
@@ -11,10 +11,14 @@ const SingleProject = ({ title, description, img }) => {
           <p>{description}</p>
           <ul>
             <li>
-              <a href="/#">Github</a>
+              <a href={github} target="_blank" rel="noreferrer">
+                Github
+              </a>
             </li>
             <li>
-              <a href="/#">Live Demo</a>
+              <a href={liveDemo} target="_blank" rel="noreferrer">
+                Live Demo
+              </a>
             </li>
           </ul>
         </div>
