@@ -1,6 +1,7 @@
 import project1 from "../src/images/expensify-app.png";
 import project2 from "../src/images/iptracker.jpg";
 import project3 from "../src/images/tracalorie.png";
+import project4 from "../src/images/shorterlinks.jpg";
 
 const projects = [
   {
@@ -29,6 +30,14 @@ const projects = [
     title: "Tracalorie",
     description:
       "Controle sobre refeições e calorias , com vannilla javascript",
+  },
+  {
+    id: 4,
+    liveDemo: "https://url-shortening-134.netlify.app/",
+    github: "https://github.com/Broncs/URL-shortening-API-landing-page",
+    img: project4,
+    title: "Shorter Links",
+    description: "encurtador de links usando API e vanilla JS",
   },
 ];
 export default projects;
