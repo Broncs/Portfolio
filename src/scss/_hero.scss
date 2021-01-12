@@ -38,3 +38,11 @@
     font-weight: 600;
   }
 }
+
+@media screen and (min-width: 700px) {
+  .hero-info h1 {
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+}

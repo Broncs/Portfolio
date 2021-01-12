@@ -2,6 +2,7 @@ import project1 from "../src/images/expensify-app.png";
 import project2 from "../src/images/iptracker.jpg";
 import project3 from "../src/images/tracalorie.png";
 import project4 from "../src/images/shorterlinks.jpg";
+import project5 from "../src/images/TrackerCovid.png";
 
 const projects = [
   {
@@ -38,6 +39,15 @@ const projects = [
     img: project4,
     title: "Shorter Links",
     description: "encurtador de links usando API e vanilla JS",
+  },
+  {
+    id: 5,
+    liveDemo: "https://covid-tracker-v3.netlify.app/",
+    github: "https://github.com/Broncs/covid-tracker",
+    img: project5,
+    title: "Covid Tracker",
+    description:
+      "Veja as estatísticas de casos, recuperados, e mortes causadas pelo Covid",
   },
 ];
 export default projects;
