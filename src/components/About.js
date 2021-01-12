@@ -1,6 +1,6 @@
 import React from "react";
 import peopleilustrator from "../images/people-with-laptop.png";
-
+import cv from "../pdf/CV-.pdf";
 const About = () => {
   return (
     <section id="sobre">
@@ -66,7 +66,14 @@ const About = () => {
                 </a>
               </li>
             </ul>
-            <button className="btn btn-primary">Curriculo</button>
+            <a
+              href={cv}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary"
+            >
+              Curriculo
+            </a>
           </div>
         </div>
       </div>

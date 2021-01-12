@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { AiOutlineFile } from "react-icons/ai";
-
+import cv from "../pdf/CV-.pdf";
 const Footer = () => {
   return (
     <footer className="footer">
@@ -27,11 +27,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                href="https://github.com/Broncs"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={cv} target="_blank" rel="noreferrer">
                 <AiOutlineFile className="icons" />
               </a>
             </li>

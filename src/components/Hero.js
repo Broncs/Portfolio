@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-
+import cv from "../pdf/CV-.pdf";
 const Hero = () => {
   return (
     <section id="home" className="hero">
@@ -31,7 +31,14 @@ const Hero = () => {
             />
           </div>
 
-          <button className="btn btn-primary">Curriculo</button>
+          <a
+            className="btn btn-primary"
+            href={cv}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Curriculo
+          </a>
         </article>
       </div>
     </section>
