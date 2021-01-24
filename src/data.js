@@ -3,6 +3,7 @@ import project2 from "../src/images/iptracker.jpg";
 import project3 from "../src/images/tracalorie.png";
 import project4 from "../src/images/shorterlinks.jpg";
 import project5 from "../src/images/TrackerCovid.png";
+import project6 from "../src/images/newKeep.jpg";
 
 const projects = [
   {
@@ -48,6 +49,15 @@ const projects = [
     title: "Covid Tracker",
     description:
       "Veja as estatísticas de casos, recuperados, e mortes causadas pelo Covid",
+  },
+  {
+    id: 6,
+    liveDemo: "https://keeper-app-br.netlify.app/",
+    github: "https://github.com/Broncs/Keeper-app",
+    img: project6,
+    title: "Keeper",
+    description:
+      "Inspirado no google Keep, com configuração de temas e background",
   },
 ];
 export default projects;
