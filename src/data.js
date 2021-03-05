@@ -1,63 +1,67 @@
-import project1 from "../src/images/expensify-app.png";
-import project2 from "../src/images/iptracker.jpg";
-import project3 from "../src/images/tracalorie.png";
-import project4 from "../src/images/shorterlinks.jpg";
-import project5 from "../src/images/TrackerCovid.png";
-import project6 from "../src/images/newKeep.jpg";
+import project1 from '../src/images/expensify-app.png';
+// import project2 from "../src/images/iptracker.jpg";
+import project2 from '../src/images/pokemon-portfolio.png';
+// import project3 from '../src/images/tracalorie.png';
+import project3 from '../src/images/UAGENCY.png';
+// import project4 from '../src/images/shorterlinks.jpg';
+import project4 from '../src/images/shoppingCart.png';
+import project5 from '../src/images/TrackerCovid.png';
+import project6 from '../src/images/newKeep.jpg';
 
 const projects = [
   {
     id: 1,
-    liveDemo: "https://react-course-2-expensify-br123.herokuapp.com/",
-    github: "https://github.com/Broncs/react-course-Expensify-app",
+    liveDemo: 'https://react-course-2-expensify-br123.herokuapp.com/',
+    github: 'https://github.com/Broncs/react-course-Expensify-app',
     img: project1,
-    title: "Expensify app",
+    title: 'Expensify app',
     description:
-      "Controle de gastos,pode filtrar por data, valor , ou pesquisar por nome",
+      'Controle de gastos,pode filtrar por data, valor , ou pesquisar por nome',
   },
   {
     id: 2,
-    liveDemo: "https://ip-address-tracker-123.netlify.app/",
-    github: "https://github.com/Broncs/ip-address-tracker",
+    liveDemo: 'https://pokedex-broncs.vercel.app/',
+    github: 'https://github.com/Broncs/Pokedex',
     img: project2,
-    title: "IP Address Tracker",
+    title: 'Pokedex',
     description:
-      'Um dos desafios do "frontend Mentor" website. Rastreador de endereço IP',
+      'Lista de Pokemons, com paginas individuais mostrando um pouco sobre cada pokemon .',
   },
   {
     id: 3,
-    liveDemo: "https://cocky-lalande-1b0c67.netlify.app/",
-    github: "https://github.com/Broncs/Tracalorie",
+    liveDemo: 'https://uagency.netlify.app/',
+    github: 'https://github.com/Broncs/Ultra-website',
     img: project3,
-    title: "Tracalorie",
+    title: 'UAgency',
     description:
-      "Controle sobre refeições e calorias , com vannilla javascript",
+      'website para empresa de marketing. com components totalmente reutilizáveis ',
   },
   {
     id: 4,
-    liveDemo: "https://url-shortening-134.netlify.app/",
-    github: "https://github.com/Broncs/URL-shortening-API-landing-page",
+    liveDemo: 'https://shopping-cart-ts.netlify.app/',
+    github: 'https://github.com/Broncs/Shopping-Card-Typescript',
     img: project4,
-    title: "Shorter Links",
-    description: "encurtador de links usando API e vanilla JS",
+    title: ' Shopping Cart',
+    description:
+      'Carrinho de compras, onde voce pode adicionar itens,aumentar a quantidade, e remover .',
   },
   {
     id: 5,
-    liveDemo: "https://covid-tracker-v3.netlify.app/",
-    github: "https://github.com/Broncs/covid-tracker",
+    liveDemo: 'https://covid-tracker-v3.netlify.app/',
+    github: 'https://github.com/Broncs/covid-tracker',
     img: project5,
-    title: "Covid Tracker",
+    title: 'Covid Tracker',
     description:
-      "Veja as estatísticas de casos, recuperados, e mortes causadas pelo Covid",
+      'Veja as estatísticas de casos, recuperados, e mortes causadas pelo Covid',
   },
   {
     id: 6,
-    liveDemo: "https://keeper-app-br.netlify.app/",
-    github: "https://github.com/Broncs/Keeper-app",
+    liveDemo: 'https://keeper-app-br.netlify.app/',
+    github: 'https://github.com/Broncs/Keeper-app',
     img: project6,
-    title: "Keeper",
+    title: 'Keeper',
     description:
-      "Inspirado no google Keep, com configuração de temas e background",
+      'Inspirado no google Keep, com configuração de temas e background',
   },
 ];
 export default projects;
