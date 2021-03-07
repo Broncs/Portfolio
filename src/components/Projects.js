@@ -10,8 +10,7 @@ const Projects = () => {
         <div className="project-info">
           <h2>Projetos</h2>
           <p>
-            Aqui estão alguns Projetos que desenvolvi, E muito mais acessando
-            meu github.
+            Aqui estão alguns Projetos que desenvolvi. Há muito mais disponíveis no meu Github.
           </p>
         </div>
 

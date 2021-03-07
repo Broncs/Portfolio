@@ -6,7 +6,7 @@ const Tools = () => {
       <div className="container">
         <div className="tools-info">
           <h2>Ferramentas</h2>
-          <p>Minhas Ferramentas para ajudar a enfrentar qualquer projeto.</p>
+          <p>Minhas ferramentas para ajudar a enfrentar qualquer projeto.</p>
         </div>
 
         <div>
