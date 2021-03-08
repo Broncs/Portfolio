@@ -11,26 +11,26 @@ const About = () => {
           </div>
           <div className="about-info">
             <h2>
-              Olá ! Me chamo Jhonatan mendes, Sou desenvolvedor Front End , moro
-              em Guarulhos,SP.
+              Olá! Me chamo Jhonatan Mendes. Sou desenvolvedor Front End e moro
+              em Guarulhos, SP.
             </h2>
             <p>
-              Apos me formar no ensino médio, estava muito indeciso em qual
-              carreira seguir, então decidi aprender inglês, que seria bem útil
-              em qualquer área que escolhesse, apos alguns tutorias sobre logica
+              Após me formar no ensino médio, estava muito indeciso em qual
+              carreira seguir. Então decidi aprender inglês, que seria bem útil
+              em qualquer área que escolhesse. Após alguns tutorias sobre lógica
               de programação, acabei me apaixonando por isso. No começo de 2020,
-              Inicie minha graduação em analise e desenvolvimento de sistemas, e
+              Inicie minha graduação em Análise e Desenvolvimento de Sistemas, e
               assim como o inglês, que eu aprendi por conta própria, estou
-              fazendo o mesmo com programação, tenho estudado todos os dias, com
-              cursos, tutorias, documentação online etc. ... Atualmente estou
-              Aprendendo desenvolvimento web Front-end , utilizando, HTML, CSS
-              ,JS, React . Busco uma oportunidade de estagio em alguma empresa,
-              Para poder aplicar meus conhecimentos em um cenário real .
+              fazendo o mesmo com programação. Tenho estudado todos os dias, com
+              cursos, tutorias, documentação online etc. Atualmente estou
+              aprendendo desenvolvimento web Front-end, utilizando, HTML, CSS, 
+	      JS e React. Busco uma oportunidade de estágio em alguma empresa,
+              para poder aplicar meus conhecimentos em um cenário real.
             </p>
             <p>
               Sinta-se à vontade para se conectar comigo! Vamos falar sobre
-              desenvolvimento web, tecnologia, esportes, videogames, culinária
-              ou como posso ajudar sua equipe ou empresa! Adoraria conhecer mais
+              desenvolvimento web, tecnologia, esportes, videogames, culinária.
+              Posso também ajudar sua equipe ou empresa! Adoraria conhecer mais
               desenvolvedores e expandir meu network.
             </p>
 
